@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Love Story</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="mobile-container">
+
+    <div id="page-landing" class="page active">
+        <div style="font-size: 24px; color: #ffb6c1; margin-top: 20px;">♡ ♡ ♡</div>
+        <img src="images\19Fan.png" class="landing-photo">
+        
+        <h2>To: My Favorite Person</h2>
+        <p style="color: #999;">From: Your Babe</p>
+        
+        <button class="btn-start" onclick="goToPage('page-password')">Click here! ❤</button>
+    </div>
+
+    <div id="page-password" class="page">
+        <img src="images/Cute.jpg" style="width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-top: 20px;">
+        
+        <h2 style="margin-top: 10px;">Enter Password</h2>
+        <p style="font-size: 12px; color: #aaa;">คำใบ้: วันที่เราเป็นแฟนกันน (DDMMYY)</p>
+        
+        <input type="password" id="pass-input" class="pass-display" readonly placeholder="• • • • • •">
+        <p id="error-msg" style="color: red; display: none;">รหัสม่ายถูกก ลองใหม่นะ!</p>
+
+        <div class="keypad">
+            <div class="key" onclick="addNum('1')">1</div>
+            <div class="key" onclick="addNum('2')">2</div>
+            <div class="key" onclick="addNum('3')">3</div>
+            <div class="key" onclick="addNum('4')">4</div>
+            <div class="key" onclick="addNum('5')">5</div>
+            <div class="key" onclick="addNum('6')">6</div>
+            <div class="key" onclick="addNum('7')">7</div>
+            <div class="key" onclick="addNum('8')">8</div>
+            <div class="key" onclick="addNum('9')">9</div>
+            <div class="key" onclick="clearNum()">C</div>
+            <div class="key" onclick="addNum('0')">0</div>
+            <div class="key key-enter" onclick="checkPass()">Enter</div>
+        </div>
+    </div>
+
+    <div id="page-menu" class="page">
+        <div class="menu-header">
+            <h1>Welcome Babe!</h1>
+            <p>ของขวัญวาเลนไทน์ของเธอ</p>
+        </div>
+
+        <div class="menu-btn stripe-bg" onclick="goToPage('page-photo')">
+            <div style="font-size: 30px;">📸</div>
+            <h3>Photo Gallery</h3>
+        </div>
+
+        <div class="menu-btn stripe-bg" onclick="goToPage('page-timeline')">
+            <div style="font-size: 30px;">💝</div>
+            <h3>Timeline of Us</h3>
+        </div>
+
+        <div class="menu-btn stripe-bg" onclick="goToPage('page-timer')">
+            <div style="font-size: 30px;">⏰</div>
+            <h3>Moment</h3>
+        </div>
+
+        <div class="menu-btn stripe-bg" onclick="goToPage('page-music')">
+            <div style="font-size: 30px;">🎵</div>
+            <h3>Fav Song</h3>
+        </div>
+
+        <div class="menu-btn stripe-bg" onclick="goToPage('page-letter')">
+            <div style="font-size: 30px;">💌</div>
+            <h3>Love Letter</h3>
+        </div>
+    </div>
+
+    <div id="page-timeline" class="page">
+        <h2>Our Journey Together 🚀</h2>
+        <div class="timeline" style="margin-top: 30px;">
+            <div class="timeline-item">
+                <div class="date-label">4 มิถุนา 68</div>
+                <p>คุยกันครั้งแรก ไม่คิดว่าหนูจะตอบด้วย แต่ว่าหนูตอบบ 55555</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">6 มิถุนา 68</div>
+                <p>คุยกันในไอจีครั้งแรก</p>
+        <div class="timeline-item">
+                <div class="date-label">7 กรกฎาคม 68</div>
+                <p>พี่ตั้งใจต่อเลโก้ทานตะวันไปให้ด้วยย เห็นว่าชอบเลยอยากให้คั้บแต่ว่าขนส่งเขาน่าจะโยนเล่นรึเปล่าไม่รู้</p>
+            </div>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">11 สิงหา 68</div>
+                <p>วันแรกที่เจอกัน เกรงสุดๆเลอคุณ 😳</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">วันศุกร์ 19 กันยา 68</div>
+                <p>พี่ขอหนูเป็นแฟน แล้วหนูตอบตกลงพี่ดีใจมากกกก 😙</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">5 พฤศิกา 68</div>
+                <p>ซื้อดอกไม้สดให้หนูครั้งแรก หนูยิ้มสวยสุดๆเลยย ถ้ารู้ว่าชอบขนาดนี้ก็อยากซื้อให้ทุกวันเลยคั้บบ 💐</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">8 ธันวา 68</div>
+                <p>หนูเซอร์ไพร์วันเกิดพี่ นึกว่าหายไปไหนอึ้ยยมีเค้กกน่ารักมากกขอบคุณมากๆคั้บแฟนน 😽💗</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">30 มกราคม 69</div>
+                <p>เจอกันครั้งที่ 2 ตื่นเต้นมากที่ได้เจอหนูยังยิ้มสวยเหมือนเดิมเลออ ตอนไปกินไอติมหนูน่ารักมากตอนที่เล่นเซ็ตเด็ก แบบเด็กเล็กเลยล่ะะ</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">31 มกราคม 69</div>
+                <p>เราไปดูคอนเสิร์ตกัน เป็นการดูคอนเสิร์ตครั้งแรกที่มีความสุขมากๆ ดีใจที่ได้ไปกับหนูคั้บบ เป็น 2 วันที่ไม่อยากให้หมดไปเลยย</p>
+            </div>
+            <div class="timeline-item">
+                <div class="date-label">Present</div>
+                <p>รักหนูเหมือนเดิมคั้บบ รักมากขึ้นด้วยยน่ารักขนาดนี้ 🐷</p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goToPage('page-menu')"> < Back to Menu</button>
+    </div>
+
+    <div id="page-timer" class="page">
+        <div style="margin-top: 50px;">
+            <div style="font-size: 50px;">💑</div>
+            <h2>We've been in love for</h2>
+            
+            <div class="timer-box">
+                <div class="time-unit"><div id="d">0</div><div>DAYS</div></div>
+                <div class="time-unit"><div id="h">0</div><div>HOURS</div></div>
+                <div class="time-unit"><div id="m">0</div><div>MINS</div></div>
+                <div class="time-unit"><div id="s">0</div><div>SECS</div></div>
+            </div>
+            <p>...and counting every beautiful moment together 💕</p>
+        </div>
+        <button class="back-btn" onclick="goToPage('page-menu')"> < Back to Menu</button>
+    </div>
+
+    <div id="page-music" class="page">
+        <h2>ส่งมาจีบคนเก่งค่ะ 🎧</h2>
+        <div class="music-player">
+            <img src="images/rose.png" class="album-art">
+            <h3>Luv @1</h3>
+            <p style="color: #aaa;">For my Babe</p>
+            
+            <div class="progress-bar"><div class="progress-fill"></div></div>
+            
+            <div class="controls">
+                <i class="fas fa-backward"></i>
+                <div class="play-btn" onclick="toggleMusic()">
+                    <i class="fas fa-play" id="play-icon"></i>
+                </div>
+                <i class="fas fa-forward"></i>
+            </div>
+            
+            <audio id="bg-music" loop>
+                <source src="music/Luv @1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <button class="back-btn" onclick="stopMusicAndGoBack()"> < Back to Menu</button>
+    </div>
+
+    <div id="page-letter" class="page">
+        <h2>Love Letter</h2>
+        <div class="envelope-container" onclick="openLetter()">
+            <div class="envelope">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; font-size: 20px;">
+                    Tap to open 💌
+                </div>
+            </div>
+            <div id="letter-content" class="letter-paper">
+                <h3>Happy Anniversary! [ ILYSB ] 🎉</h3>
+                <p>
+                    หวัดดีคั้บองุ่นนดีใจที่ได้รู้จักองุ่นนะคั้บบรู้สึกโชคดีมากๆที่มีหนูอยู่ในชีวิตคอยอยู่ข้างๆ คอยให้กำลังใจในทุกๆเรื่องคอยรับฟังทุกๆอย่าง
+                    พี่มีอะไรจะให้ไม่เยอะเลยคั้บบ ขอบคุณที่อยู่ข้างกันมาจนถึงวันนี้นะคั้บบ <br>
+                    รักหนูมากๆด้วยนะคะคนเก่ง 💕💗 <br>
+                    จาก... แฟนของคุณคนเก่งคั้บบ 💓
+                </p>
+            </div>
+        </div>
+        <button class="back-btn" onclick="goToPage('page-menu')"> < Back to Menu</button>
+    </div>
+    
+    <div id="page-photo" class="page">
+        <h2>Our Memories 📸</h2>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+            <img src="images/12-81.jpg" style="width:100%">
+            <img src="images/12-8.jpg" style="width:100%">
+            <img src="images/29-1.jpg" style="width:100%">
+            <img src="images/7-7.jpg" style="width:100%">
+            <img src="images/30-1.jpg" style="width:100%">
+            <img src="images/31.jpeg" style="width:100%">
+            <img src="images/8-12.jpg" style="width:100%">
+            <img src="images/11.jpg" style="width:100%">  
+            <img src="images/itim.gif" style="width:100%">
+            <img src="images/con.gif" style="width:100%">
+            <img src="images/31Con.jpg" style="width:100%">
+            <img src="images/flower.gif" style="width:100%">
+            <img src="images/31Conmama.jpg" style="width:100%">
+            
+
+        </div>
+        <button class="back-btn" onclick="goToPage('page-menu')"> < Back to Menu</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
